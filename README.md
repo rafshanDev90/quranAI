@@ -66,7 +66,9 @@
 ```text
 bayyan-AI/
 ├── bot/                # Telegram Bot (Node.js)
-│   ├── index.js         # Bot logic & Telegraf setup
+│   ├── commands/        # Modular command handlers (start, help, query)
+│   ├── utils/           # Utility functions (logger, etc.)
+│   ├── index.js         # Bot entry point
 │   └── package.json     # Node.js dependencies
 ├── src/
 │   ├── main.py          # FastAPI entry point & API routes

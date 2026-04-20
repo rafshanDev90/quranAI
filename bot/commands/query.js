@@ -15,12 +15,14 @@ export const queryHandler = async (ctx) => {
 
     const { answer, matches } = response.data;
 
-    await ctx.replyWithHTML(`<b>🤖 Bayyan AI Answer:</b>\n\n${answer}`);
+    // Added ☪️ icon to the header
+    await ctx.replyWithHTML(`<b>☪️ Bayyan AI Answer:</b>\n\n${answer}`);
 
     if (matches?.length > 0) {
       for (const match of matches) {
+        // Added 🕌 icon to the verse header
         const verseText = 
-          `<b>📖 Surah ${match.surah} (${match.ayah})</b>\n\n` +
+          `<b>🕌 Surah ${match.surah} (${match.ayah})</b>\n\n` +
           `<i>${match.arabic}</i>\n\n` +
           `${match.text}`;
         
@@ -30,6 +32,7 @@ export const queryHandler = async (ctx) => {
 
   } catch (error) {
     logger.error('Error fetching from Bayyan API:', error);
+    // Added ⚠️ icon for errors
     ctx.reply('⚠️ Sorry, I encountered an error. Please ensure the Bayyan AI server is running.');
   }
 };
