@@ -65,6 +65,9 @@
 
 ```text
 bayyan-AI/
+├── bot/                # Telegram Bot (Node.js)
+│   ├── index.js         # Bot logic & Telegraf setup
+│   └── package.json     # Node.js dependencies
 ├── src/
 │   ├── main.py          # FastAPI entry point & API routes
 │   ├── orchestrator.py  # RAG logic & LLM chain configuration
@@ -95,9 +98,22 @@ pip install -r requirements.txt
 ### 3. Environment Setup
 Create a `.env` file in the root directory:
 ```env
+# Backend Config
 MONGO_URI=your_mongodb_uri
 GROQ_API_KEY=your_groq_api_key
 REDIS_URL=your_redis_url
+
+# Telegram Bot Config
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+BAYYAN_API_URL=http://localhost:8000
+```
+
+### 4. Running the Telegram Bot
+In a new terminal:
+```bash
+cd bot
+npm install
+node index.js
 ```
 
 ### 4. Data Ingestion
