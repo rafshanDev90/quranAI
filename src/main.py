@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to Bayyan AI API"}
+    return {"messages": "Welcome to Bayyan AI API"}
 
 @app.get("/search")
 def search(q: str):
