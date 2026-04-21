@@ -15,7 +15,7 @@
 
 ## 🌟 Overview
 
-**Bayyan AI** is an intelligent Quranic search and assistant platform built with modern AI technologies. It leverages **Retrieval-Augmented Generation (RAG)** to provide accurate, context-aware answers to questions about the Quran, ensuring every response is backed by authentic verses with citations.
+**Bayyan AI** is an intelligent Quranic search and assistant platform built with modern AI technologies. It leverages **Retrieval-Augmented Generation (RAG)** to provide accurate, context-aware answers to questions about the Quran, ensuring every response is backed by authentic verses with citations .
 
 ### 🚀 Key Features
 - **Semantic Search:** Find verses based on meaning, not just keywords.
